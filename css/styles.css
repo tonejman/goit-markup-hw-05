@@ -41,10 +41,10 @@ body,
 .address-mail:hover,
 .address-mail:focus,
 .address-phone:hover,
-.address-phone:focus,
-.contact-icon {
+.address-phone:focus {
   color: var(--blue-font-color);
 }
+
 .mail,
 .phone,
 .agency,
@@ -156,7 +156,8 @@ body,
   background-color: var(--background-block-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 50%),
+      rgba(47, 48, 58, 0.4) 50%
+    ),
     url(../images/designers-in-the-office.jpg);
   background-position: center;
   background-size: cover;
@@ -308,7 +309,6 @@ section {
   justify-content: center;
   letter-spacing: 0.03em;
   gap: 30px;
-  
 }
 
 .team-list {
@@ -366,11 +366,11 @@ section {
 
 .card-range:hover,
 .card-range:focus {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   cursor: pointer;
-}  
+}
 
 .card-image {
   display: block;
@@ -399,7 +399,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 .contact-header__phone:focus {
   --color3: var(--blue-font-color);
   fill: var(--color3);
- 
+
   cursor: pointer;
 }
 
@@ -407,8 +407,12 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 .contact-header__mail:focus > .mail,
 .contact-header__phone:hover > .phone,
 .contact-header__phone:focus > .phone {
- 
   color: var(--blue-font-color);
+}
+
+.contact-header__mail > .contact-icon:hover {
+  --color3: var(--blue-font-color);
+  fill: var(--color3);
 }
 
 .contact-header__mail {
