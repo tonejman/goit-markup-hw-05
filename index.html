@@ -31,8 +31,9 @@
         </div>
         <nav class="menu-nav">
           <ul class="header-nav">
-            <li class="item">
-              <a class="agency" href="agencja">Agencja</a>
+            <li class="item ">
+              <a class="agency-active" href="agencja">Agencja</a>
+          
             </li>
             <li class="item">
               <a class="portfolio" href="./portfolio.html">Portfolio</a>
@@ -70,7 +71,8 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="order-button" type="button">Zamów usługę</button>
+          <button class="order-button" type="button" data-modal-open>
+            Zamów usługę</button>
         </div>
       </section>
       <section class="competences">
@@ -130,26 +132,41 @@
       <section class="work">
         <div class="container">
           <h2 class="header-secondary">Czym się zajmujemy</h2>
-          <div class="work-images">
+          <ul class="work-images">
+            <li class="work-card">
             <img
-              src="images/designer-work1.jpg"
-              width="370"
-              height="294"
-              alt="Programista pracujący przy swoim biurku"
+            src="images/designer-work1.jpg"
+            width="370"
+            height="294"
+            alt="Programista pracujący przy swoim biurku"
             />
+            <div class="work-label">
+              <p class="work-label__text">aplikacje komputerowe</p>
+            </div>
+            </li>
+            <li class="work-card">
             <img
               src="images/designer-work2.jpg"
               width="370"
               height="294"
               alt="Projektant tworzący aplikację mobilną na smartfona"
             />
+            <div class="work-label">
+              <p class="work-label__text">aplikacje mobilne</p>
+            </div>
+            </li>
+            <li class="work-card">
             <img
               src="images/designer-work3.jpg"
               width="370"
               height="294"
               alt="Twórca projektujący stronę internetową, trzymający w ręku tablet graficzny z wyborem kolorów"
             />
-          </div>
+            <div class="work-label">
+              <p class="work-label__text">rozwiązania graficzne</p>
+            </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -452,6 +469,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-window" type="button" data-modal-close>&#x2715</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
